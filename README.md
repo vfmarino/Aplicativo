@@ -49,3 +49,30 @@ Criação do Projeto e breve descrição do que se pretende fazer incialmente em
 
 ***
 
+### 2° Passo
+
+- Criação dos principais componentes pelo terminal:
+ng g c home
+ng g c header
+ng g c footer
+
+Adição dos componentes no app.component.html
+adição do patch home em app-routing
+
+npm run start para testar 
+
+Adicionado Css Basico em styles.css
+Para definir a Fonte adicionamos o import dela gerado do google fonts
+definimos margin e padddin 0 e a fonte 
+font-family: "Kanit", sans-serif;
+
+Definição de variaveis para cores.
+Css basico de header e footer.( testando e visualizando as cores para ter uma ideia inicial)
+
+Introduzido Conteudo Inicial de HTML e CSS.
+
+### 2° Commit - FRIST HTML AND CSS
+
+***
+
+### 3° Passo
