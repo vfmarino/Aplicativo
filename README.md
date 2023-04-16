@@ -76,3 +76,28 @@ Introduzido Conteudo Inicial de HTML e CSS.
 ***
 
 ### 3° Passo
+
+- criado O texto e nome Como MONEYHIVE terporariamente, gostei do nome porém existe um app na UK com mesmo nome
+- adicionado uma breve descrição sobre o q vai ser o app, depois quando tiver imagens e funcionalidades vamos melhorar essa pagina inicial.
+
+Vamos agora primeiramente Criar um Componenent para cadastrar um novo usuário.
+ng g c register
+Criado html do componente register
+Nesse component vamos usar form e para isso precisamos declarar na raiz app.module para que forms funcione.
+
+Vamos criar agora uma pasta modelo para adicionar o modelo de usario e os dados que cada usuario pode ter.
+ng g m models/user
+
+Inicialmente iremos precisar saber, nome, email, telefone, cpf e uma senha que será criptografada antes de salva no banco de dados, portanto em nosso moedelo são essas as variaveis necessarias.
+
+no arquivo register.component.ts vamos declarar o modelo user.
+user : User = new User(); nesse codigo estamos atribuindo a variavel user, uma nova instancia, e essa instancia tem uma classe User, que é a classe referente ao modelo que criamos anteriormente, ou seja um novo objeto que segue a classe User, isso permite acessar as propriedades que vamos receber do nosso formulario html e atribuir ao campo desejado como user.name, user.email e etc, para isso no input adicionamos a proriedade [(ngModel)]="user.name" e entao o typscript entende e atribuie o valor digitado em input para poder ser usado posteriomente, no caso criamos um console.log(this.user)para poder verificar se estava tudo atribuido corretamente para entao criar o serviço e enviar as informaçoes para o back end.
+
+Vamos começar a criar o back end em Node.js em paralelo.
+
+### 3° Commit - User model and Register to consoleUSER
+
+***
+
+### 4° Passo
+

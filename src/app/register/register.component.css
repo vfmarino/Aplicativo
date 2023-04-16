@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+}
+.container1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  border-right: 3px solid var(--cor-destaque);
+  border-bottom: 3px solid var(--cor-destaque);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor-header);
+}
+.logo img {
+  width: 50%;
+  margin-top: 10vh;
+  background-color: var(--cor-header);
+}
+.register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  align-items: center;
+}
+.register h2 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+  background-color: var(--cor-destaque);
+  width: 60%;
+  height: 7vh;
+  color: var(--cor-preto);
+  font-style: italic;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 60%;
+}
+form {
+  border: 2px solid var(--cor-destaque);
+  border-radius: 8px;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 1vw;
+  font-weight: 400;
+}
+form input {
+  font-size: 1.5vw;
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+  margin-bottom: 1vh;
+  border-radius: 5px;
+}
+form button {
+  padding: 0.4vw;
+  background-color: var(--cor-destaque);
+  border: none;
+  border-radius: 0.4vw;
+  font-size: 1.1vw;
+  height: 8vh;
+  font-weight: 700;
+  color: var(--cor-preto);
+  margin-top: 2vh;
+  font-style: italic;
+}
