@@ -101,3 +101,26 @@ Vamos começar a criar o back end em Node.js em paralelo.
 
 ### 4° Passo
 
+Criamos o Back End com Node.js usando Koa e Prisma.
+
+Criamos o userService : ng g s services/user/userService
+
+Para usar HttpClient Precisamos adicionar o modulo common:
+npm install @angular/common --save
+
+No arquivo app.module add: HttpClientModule - import { HttpClientModule } from '@angular/common/http';
+issopermite usar o pacote do HttpClient no serviço para chamar as requisições.
+
+Vamos criar no serviço userService as seguinte funções:
+createUser()
+
+ng g c login
+Pagina para fazer o login
+
+ng g c user/profile/profile
+Nessa primeira pagina profile será para onde se direciona quando logado.
+
+ng g s services/auth/authService
+Serviço para chamar o login e logout de user.
+
+### 4° Commit 1° Http(createUser, Login Logout)

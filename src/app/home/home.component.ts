@@ -15,6 +15,9 @@ export class HomeComponent implements OnInit {
   register() {
     this.route.navigate(['register']);
   }
+  login(){
+    this.route.navigate(['login']);
+  }
   ngOnInit(): void {
   }
 
