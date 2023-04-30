@@ -10,6 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './user/profile/profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user/user.component';
+import { CryptoPricesComponent } from './user/crypto-prices/crypto-prices.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { LoginComponent } from './login/login.component';
     RegisterComponent,
     ProfileComponent,
     LoginComponent,
+    UserComponent,
+    CryptoPricesComponent,
 
   ],
   imports: [

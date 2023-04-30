@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   email!: string;
   password!: string;
-
+  token!: string;
   constructor(
     private authService: AuthServiceService,
     private route: Router
@@ -22,10 +22,18 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.authService.login(this.email, this.password).subscribe(
-      response => console.log(response),
-      error => console.error(error)
+      {
+        next: (response: any) => {
+          localStorage.setItem("token", response.token);
+          this.route.navigate(['profile'])
+        },
+        error: error => {
+          console.error();
+          alert('Login Inválido');
+        }
+      });
 
-    );
-    this.route.navigate(['profile']);
   }
+
 }
+

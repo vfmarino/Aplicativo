@@ -124,3 +124,26 @@ ng g s services/auth/authService
 Serviço para chamar o login e logout de user.
 
 ### 4° Commit 1° Http(createUser, Login Logout)
+
+***
+
+### 5° Passo 
+
+Nessa etapa vamos fazer o servidor retornar os dados do User na pagina de Profile.
+Para isso deve-se usar a resposta do JWTtoken para buscar as informaçoes no servidor.
+
+Primeiramente fizemos com que ao fazer o login o token fica-se salvo em localStorage, quando chega em Profile,ngOnInit chama uma função para um serviço de GetUserData, e então retornar os dados obtidos do servidor.
+
+Tendo adicionado e estando com os dados do user na tela iremos agora chamar a API do CoinmarkeCAp para trazer o valor de todas criptomoedas de sua api.
+
+npm install axios para instalar a biblioteca axios 
+
+criado componente user e criptoPrices
+
+ng generate service services/coin-market-cap
+
+No componente ts de criptoPrices
+
+O sistema Escreve as Cryptos pegando diretamente da API da coinMarketCap, porém desejamos que isso seja feito pelo backend, que devera salvar todos os preços e então buscaremos os dados na nossa api. Vamos dar Commit aqui para verificar oq foi feito porém iremos alterar no proximos para buscar direto em nossa API.
+
+### 5° Commit - FrontEnd Get CoinMarketCap API

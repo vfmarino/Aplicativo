@@ -1,0 +1,13 @@
+{
+  "/api/*": {
+    "target": "https://pro-api.coinmarketcap.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/v1/cryptocurrency"
+    },
+    "headers": {
+      "X-CMC_PRO_API_KEY": "73ef8b4d-8c7d-4934-bceb-4e72a823ce3a"
+    }
+  }
+}
