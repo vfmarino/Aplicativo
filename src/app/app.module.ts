@@ -11,7 +11,19 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './user/profile/profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user/user.component';
-import { CryptoPricesComponent } from './user/crypto-prices/crypto-prices.component';
+import { OperacaoComponent } from './operacao/operacao/operacao.component';
+import { MenuComponent } from './user/menu/menu.component';
+import { CoinMarketCapListComponent } from './coin-market-cap-list/coin-market-cap-list.component';
+import { WalletComponent } from './wallet/wallet/wallet.component';
+import { OpenWalletComponent } from './wallet/open-wallet/open-wallet.component';
+import { CreateWalletComponent } from './wallet/create-wallet/create-wallet.component';
+import { TransactionBalanceComponent } from './wallet/transaction-balance/transaction-balance.component';
+import { AllTransactionByWalletIdComponent } from './wallet/all-transaction-by-wallet-id/all-transaction-by-wallet-id.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterPipe } from './pipe/filter.pipe';
+import { FinancasComponent } from './user/financas/financas.component';
+import { InvestimentoComponent } from './user/investimento/investimento.component';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +35,25 @@ import { CryptoPricesComponent } from './user/crypto-prices/crypto-prices.compon
     ProfileComponent,
     LoginComponent,
     UserComponent,
-    CryptoPricesComponent,
+   OperacaoComponent,
+    MenuComponent,
+    CoinMarketCapListComponent,
+    WalletComponent,
+    OpenWalletComponent,
+    CreateWalletComponent,
+    TransactionBalanceComponent,
+    AllTransactionByWalletIdComponent,
+    FilterPipe,
+    FinancasComponent,
+    InvestimentoComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,8 @@
 .container{
   display: flex;
-}
-.profile{
-  margin: 5%;
-}
-.carteiras{
   margin-top: 5%;
 }
+
 /* Estilo para a tabela */
 .carteiras table {
   width: 120%;
@@ -33,11 +29,5 @@
 .carteiras label {
   background: none;
 }
-.carteiras button{
-  padding: 0.3vw;
-}
 
-.grafico{
-  margin-top: 5%;
-  margin-left: 15%;
-}
+

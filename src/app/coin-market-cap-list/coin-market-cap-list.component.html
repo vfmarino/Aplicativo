@@ -1,0 +1,26 @@
+<div class="container">
+  <table>
+    <div class="pesquisar">
+      <h3>Pesquisar:</h3>
+      <input type="text" [(ngModel)]="searchTerm" placeholder="Nome do ativo" />
+    </div>
+
+    <tr>
+      <th><label>ID</label></th>
+      <th><label>Logo</label></th>
+      <th><label>NOME</label></th>
+      <th><label>SIMBOLO</label></th>
+      <th><label>VALOR</label></th>
+    </tr>
+    <tr
+      *ngFor="let ativo of ativos | filter: searchTerm | paginate: { itemsPerPage: pageSize, currentPage: currentPage  }">
+      <th class="th1"><label>{{ativo.id}}</label></th>
+      <th class="th1"><label>{{ativo.coinMarketCapId}}</label></th>
+      <th class="th1"><label>{{ativo.name}}</label></th>
+      <th class="th1"><label>{{ativo.symbol}}</label></th>
+      <th class="th1"><label>{{ativo.price | number:'.2-2' }}</label></th>
+    </tr>
+  </table>
+  <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
+
+</div>

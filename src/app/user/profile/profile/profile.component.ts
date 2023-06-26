@@ -9,7 +9,7 @@ import { UserServiceService } from '../../../services/user/user-service.service'
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  userID!: number;
   name!: string;
   email!: string;
   telefone!: string;
@@ -18,6 +18,7 @@ export class ProfileComponent implements OnInit {
   constructor(
     private authService: AuthServiceService,
     private userService: UserServiceService,
+
     private route: Router
   ) { }
 
@@ -25,12 +26,19 @@ export class ProfileComponent implements OnInit {
     this.getuserData();
   }
 
-  userData: any;
+  investimento(userID: number){
+    this.route.navigate(['investimentos', userID]);
+  }
+
+  financas(){
+    this.route.navigate(['financas']);
+  }
+
   getuserData() {
     this.userService.getUserData().subscribe(
       {
         next: (response: any) => {
-          console.log(response);
+          this.userID = response.id;
           this.name = response.name;
           this.email = response.email;
           this.telefone = response.telefone;
@@ -38,7 +46,6 @@ export class ProfileComponent implements OnInit {
         },
         error: error => {
           console.error();
-
         }
       });
   }

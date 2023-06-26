@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Bitcoin", "symbol": "BTC" },
+  { "id": 1027, "name": "Ethereum", "symbol": "ETH" },
+  { "id": 825, "name": "Tether", "symbol": "USDT" },
+  { "id": 1839, "name": "BNB", "symbol": "BNB" },
+  { "id": 3408, "name": "USD Coin", "symbol": "USDC" },
+  { "id": 52, "name": "XRP", "symbol": "XRP" },
+  { "id": 2010, "name": "Cardano", "symbol": "ADA" },
+  { "id": 74, "name": "Dogecoin", "symbol": "DOGE" },
+  { "id": 3890, "name": "Polygon", "symbol": "MATIC" },
+  { "id": 5426, "name": "Solana", "symbol": "SOL" },
+  { "id": 6636, "name": "Polkadot", "symbol": "DOT" },
+  { "id": 2, "name": "Litecoin", "symbol": "LTC" },
+  { "id": 1958, "name": "TRON", "symbol": "TRX" },
+  { "id": 4687, "name": "Binance USD", "symbol": "BUSD" },
+  { "id": 5994, "name": "Shiba Inu", "symbol": "SHIB" }
+]

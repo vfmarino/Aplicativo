@@ -1,0 +1,34 @@
+.container{
+  margin-top: 2%;
+  margin-left: 8%;
+}
+table {
+  width: 75%;
+  border-spacing: 0;
+
+
+}
+
+th {
+  background-color: #30a6d1;
+  text-align: center;
+  padding: .35vw;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+td {
+
+  border: 1px solid #000;
+}
+label {
+  background: none;
+}
+.th1{
+  background-color: #9ad6ee;
+
+}
+.th1 label{
+  color: #000;
+}
+

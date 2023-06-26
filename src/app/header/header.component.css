@@ -5,19 +5,22 @@
 }
 .header1{
   display: flex;
-  background-color: var(--cor-bg);
+  background-color: var(--cor-header);
   width: 100%;
   height: 7vh;
   justify-content: space-around;
   align-items: center;
+
 }
 
-
+h1{
+  background: none;
+}
 .btn{
   background: none;
 }
 .btn button{
-
+  background: none;
   margin-right: 1vw;
 
 }

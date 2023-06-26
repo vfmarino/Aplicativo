@@ -147,3 +147,14 @@ No componente ts de criptoPrices
 O sistema Escreve as Cryptos pegando diretamente da API da coinMarketCap, porém desejamos que isso seja feito pelo backend, que devera salvar todos os preços e então buscaremos os dados na nossa api. Vamos dar Commit aqui para verificar oq foi feito porém iremos alterar no proximos para buscar direto em nossa API.
 
 ### 5° Commit - FrontEnd Get CoinMarketCap API
+
+***
+
+### 6° Passo
+
+ng g c operacao/operacao - > Criar Formulario para inserir operação em uma carteira
+ng g c portfolio/portfolio - > Criar Portifolio
+ng g c carteira/carteira -> Criar Carteira
+ng g c user/menu - Paraa criar menu de atividades que o usuario pode realizar
+
+

@@ -1,0 +1,29 @@
+<div>
+<h1>Carteiras Registradas</h1>
+<table>
+  <tr>
+    <th><label>N°</label></th>
+    <th><label>Nome da Carteira</label></th>
+    <th><label>Categoria</label></th>
+    <th><label>Valor Investido($ USD)</label></th>
+    <th><label>Porcetagem(%)</label></th>
+    <th><label>Observações</label></th>
+    <th><label></label></th>
+
+  </tr>
+  <tr *ngFor="let wallet of wallets">
+    <th><label>{{wallet.id}}</label></th>
+    <th><label>{{wallet.name}}</label></th>
+    <th><label>{{wallet.name}}</label></th>
+    <th><label>{{wallet.name}}</label></th>
+    <th><label>{{wallet.name}}</label></th>
+    <th><label>{{wallet.name}}</label></th>
+    <th>
+      <button (click)="openWallet(wallet.id)">Abrir </button>
+      <button (click)="deleteWallet(wallet.id)">Deletar</button>
+    </th>
+
+  </tr>
+</table>
+</div>
+<div class="grafico"> <h1> % de Cada Carteira</h1></div>

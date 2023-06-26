@@ -1,0 +1,28 @@
+<div>
+  <div> Criar Carteira </div>
+  <form>
+    <table>
+      <tr>
+        <th><label for="nomeCarteira">Nome da Carteira</label></th>
+       <!--   <th><label for="Categoria">Categoria</label></th>-->
+
+      </tr>
+      <tr>
+        <td><input type="text" id="nomeCarteira" name="nomeCarteira" required [(ngModel)]="wallet.name"></td>
+     <!--   <td>
+          <select required [(ngModel)]="wallet.categoriaID" name="categoria">
+            <option [ngValue]="1">Criptomoedas</option>
+            <option [ngValue]="2">B3</option>
+            <option [ngValue]="3">EUA</option>
+          </select>
+        </td> -->
+        <td>
+          <button (click)="createWallet()">Criar</button>
+
+        </td>
+      </tr>
+    </table>
+
+  </form>
+
+</div>

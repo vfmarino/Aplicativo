@@ -20,6 +20,7 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
+    this.user.assinaturaID = 1;
     this.userService.createUser(this.user).subscribe(
       user =>{
         console.log(this.user);

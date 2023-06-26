@@ -5,4 +5,5 @@ export class User {
   password! : string;
   cpf!: string;
   telefone!:string;
+  assinaturaID!: number;
 }

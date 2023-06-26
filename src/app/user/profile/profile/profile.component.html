@@ -1,16 +1,21 @@
-<div class="container">
+<div class="menu">
+  <app-menu></app-menu>
+</div>
 
+<div class="container">
   <div class="profile">
+
     <p>Nome: {{name}}</p>
-    <p>Email: {{email}}</p>
-    <p>Telefone: {{telefone}}</p>
-    <p>CPF: {{cpf}}</p>
+    <p>e-mail: {{email}}</p>
+    <p><button>Alterar Cadastro</button></p>
+    <button (click)="logout()">Logout/Sair</button>
 
   </div>
 
-  <app-crypto-prices></app-crypto-prices>
-
-
-  <button (click)="logout()">Sair</button>
+  <div class="carteiras">
+    <h1>GERENCIAMENTO</h1>
+    <button (click)="financas()">FINANÇAS</button>
+    <button (click)="investimento()">INVESTIMENTOS</button>
+  </div>
 
 </div>
